@@ -1,5 +1,11 @@
-body     { font-size: 15px; }
-div      { font-size: 25px; }
-.aClass  { font-size: 35px; }
-#n1      { font-size: 45px; }
-#n2      { font-size: 15px; }
+body { 
+	background-color: lightgray; 
+}
+
+h1 {
+	color: blue; 
+}
+
+p { 
+	color: green; 
+}
