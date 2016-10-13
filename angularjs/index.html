@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" ng-app="exampleApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Agenda en Angular</title>
+  <script src="node_modules/angular/angular.min.js"></script>
+</head>
+
+<body ng-controller="AgendaCtrl as agenda">
+
+<div>
+  <div>
+    <h1>
+      Agenda
+      <small>AngularJS</small>
+    </h1>
+  </div>
+
+  <div>
+    <div>
+
+      <form>
+        <div>
+          <input type="text" ng-model="agenda.textoBusqueda" placeholder="Buscar...">
+
+          <div>
+            <button type="submit" ng-click="agenda.limpiarBusqueda()">
+              Limpiar
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <table>
+        <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Tel</th>
+          <th>Email</th>
+          <th>Direcci&oacute;n</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
+          <td>{{contacto.nombre}}</td>
+          <td>{{contacto.apellido}}</td>
+          <td>{{contacto.telefono}}</td>
+          <td>{{contacto.email}}</td>
+          <td>{{contacto.direccion}}</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+
+<!-- nuestros js -->
+<script src="js/app.js"></script>
+<script src="js/agenda.js"></script>
+
+</body>
+</html>
+

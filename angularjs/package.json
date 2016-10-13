@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "description": "Example",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "angular": "^1.4.4"
+  }
+}
