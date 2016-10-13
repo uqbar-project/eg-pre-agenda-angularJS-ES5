@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <title>Agenda</title>
+</head>
+
+<body>
+
+<div>
+  <div>
+    <h1>
+      Agenda
+      <small>HTML puro</small>
+    </h1>
+  </div>
+
+  <div>
+    <div>
+
+      <form>
+        <div>
+          <input type="text" placeholder="Buscar...">
+
+          <div>
+            <button type="submit" onclick="alert('hey')">
+              Limpiar
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <table>
+        <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Tel</th>
+          <th>Email</th>
+          <th>Dirección</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
+          <td class="ng-binding">Juan</td>
+          <td class="ng-binding">Perez</td>
+          <td class="ng-binding">321472352</td>
+          <td class="ng-binding">juan@gmail.com</td>
+          <td class="ng-binding">Corrientes 1234, 3B</td>
+        </tr>
+        <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
+          <td class="ng-binding">Pablo</td>
+          <td class="ng-binding">Alvarez</td>
+          <td class="ng-binding">666</td>
+          <td class="ng-binding">pablo@gmail.com</td>
+          <td class="ng-binding">Belgrano 12, 4B</td>
+        </tr>
+        <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
+          <td class="ng-binding">Maria</td>
+          <td class="ng-binding">Rodriguez</td>
+          <td class="ng-binding">47584777</td>
+          <td class="ng-binding">maria@gmail.com</td>
+          <td class="ng-binding">Lavalle 123, 5B</td>
+        </tr>
+        <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
+          <td class="ng-binding">Andrea</td>
+          <td class="ng-binding">Garcia</td>
+          <td class="ng-binding">888890</td>
+          <td class="ng-binding">andrea@gmail.com</td>
+          <td class="ng-binding">Sarmiento 1234, 6B</td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+
+<!-- nuestros js -->
+<script src="./index_files/app.js.download"></script>
+<script src="./index_files/agenda.js.download"></script>
+
+
+
+
+</body></html>
