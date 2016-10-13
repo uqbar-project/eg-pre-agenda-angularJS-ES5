@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
+  <meta charset="utf-8">
   <title>Agenda</title>
 </head>
 
 <body>
-
 <div>
   <div>
     <h1>
@@ -20,10 +20,10 @@
 
       <form>
         <div>
-          <input type="text" placeholder="Buscar...">
+          <input id="search" type="text" placeholder="Buscar...">
 
           <div>
-            <button type="submit" onclick="alert('hey')">
+            <button type="submit" onclick="alert('not yet implemented')">
               Limpiar
             </button>
           </div>
@@ -41,33 +41,33 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
-          <td class="ng-binding">Juan</td>
-          <td class="ng-binding">Perez</td>
-          <td class="ng-binding">321472352</td>
-          <td class="ng-binding">juan@gmail.com</td>
-          <td class="ng-binding">Corrientes 1234, 3B</td>
+        <tr>
+          <td>Juan</td>
+          <td>Perez</td>
+          <td>321472352</td>
+          <td>juan@gmail.com</td>
+          <td>Corrientes 1234, 3B</td>
         </tr>
-        <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
-          <td class="ng-binding">Pablo</td>
-          <td class="ng-binding">Alvarez</td>
-          <td class="ng-binding">666</td>
-          <td class="ng-binding">pablo@gmail.com</td>
-          <td class="ng-binding">Belgrano 12, 4B</td>
+        <tr>
+          <td>Pablo</td>
+          <td>Alvarez</td>
+          <td>666</td>
+          <td>pablo@gmail.com</td>
+          <td>Belgrano 12, 4B</td>
         </tr>
-        <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
-          <td class="ng-binding">Maria</td>
-          <td class="ng-binding">Rodriguez</td>
-          <td class="ng-binding">47584777</td>
-          <td class="ng-binding">maria@gmail.com</td>
-          <td class="ng-binding">Lavalle 123, 5B</td>
+        <tr>
+          <td>Maria</td>
+          <td>Rodriguez</td>
+          <td>47584777</td>
+          <td>maria@gmail.com</td>
+          <td>Lavalle 123, 5B</td>
         </tr>
-        <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
-          <td class="ng-binding">Andrea</td>
-          <td class="ng-binding">Garcia</td>
-          <td class="ng-binding">888890</td>
-          <td class="ng-binding">andrea@gmail.com</td>
-          <td class="ng-binding">Sarmiento 1234, 6B</td>
+        <tr>
+          <td>Andrea</td>
+          <td>Garcia</td>
+          <td>888890</td>
+          <td>andrea@gmail.com</td>
+          <td>Sarmiento 1234, 6B</td>
         </tr>
         </tbody>
       </table>
@@ -76,11 +76,5 @@
   </div>
 </div>
 
-<!-- nuestros js -->
-<script src="./index_files/app.js.download"></script>
-<script src="./index_files/agenda.js.download"></script>
-
-
-
-
-</body></html>
+</body>
+</html>
