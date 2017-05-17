@@ -10,50 +10,42 @@
 <body ng-controller="AgendaCtrl as agenda">
 
 <div>
-  <div>
-    <h1>
-      Agenda
-      <small>AngularJS</small>
-    </h1>
-  </div>
+  <h1>Agenda AngularJS</h1>
 
   <div>
-    <div>
+    <form>
+      <div>
+        <input type="text" ng-model="agenda.textoBusqueda" placeholder="Buscar...">
 
-      <form>
         <div>
-          <input type="text" ng-model="agenda.textoBusqueda" placeholder="Buscar...">
-
-          <div>
-            <button type="submit" ng-click="agenda.limpiarBusqueda()">
-              Limpiar
-            </button>
-          </div>
+          <button type="submit" ng-click="agenda.limpiarBusqueda()">
+            Limpiar
+          </button>
         </div>
-      </form>
+      </div>
+    </form>
 
-      <table>
-        <thead>
-        <tr>
-          <th>Nombre</th>
-          <th>Apellido</th>
-          <th>Teléfono</th>
-          <th>Email</th>
-          <th>Dirección</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
-          <td>{{contacto.nombre}}</td>
-          <td>{{contacto.apellido}}</td>
-          <td>{{contacto.telefono}}</td>
-          <td>{{contacto.email}}</td>
-          <td>{{contacto.direccion}}</td>
-        </tr>
-        </tbody>
-      </table>
+    <table>
+      <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Teléfono</th>
+        <th>Email</th>
+        <th>Dirección</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="contacto in agenda.contactos | filter:agenda.textoBusqueda">
+        <td>{{contacto.nombre}}</td>
+        <td>{{contacto.apellido}}</td>
+        <td>{{contacto.telefono}}</td>
+        <td>{{contacto.email}}</td>
+        <td>{{contacto.direccion}}</td>
+      </tr>
+      </tbody>
+    </table>
 
-    </div>
   </div>
 </div>
 
@@ -62,4 +54,3 @@
 
 </body>
 </html>
-
