@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<script>
-			turnOn = function() {
-				document.getElementById('myImage').src='pic_bulbon.gif';
-			}
 
-			turnOff = function() {
-				document.getElementById('myImage').src='pic_bulboff.gif';
-			}
-		</script>
-	</head>
-	<body>
-		<h1>What Can JavaScript Do?</h1>
-		<p>JavaScript can change HTML attributes.</p>
-		<p>In this case JavaScript changes the src (source) attribute of an image.</p>
-		<button onclick="turnOn()">Turn on the light</button>
-		<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-		<button onclick="turnOff()">Turn off the light</button>
-	</body>
+  <head>
+    <script src="switch.js"></script>
+  </head>
+
+  <body onload="turnOff()">
+    <h1>¿Qué puede hacer JavaScript?</h1>
+    <p>Por ejemplo, puede modificar el DOM (Document Object Model).</p>
+    <p>En este caso, modifica el atributo src (source) de un elemento img (image).</p>
+
+    <button onclick="turnOn()">ON</button>
+    <img id="lamp" style="width:100px">
+    <button onclick="turnOff()">OFF</button>
+  </body>
+
 </html>
