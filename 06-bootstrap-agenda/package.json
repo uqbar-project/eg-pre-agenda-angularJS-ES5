@@ -2,9 +2,8 @@
   "version": "1.0.0",
   "description": "Example",
   "author": "",
-  "license": "",
+  "license": "MIT",
   "dependencies": {
-    "angular": "^1.4.4",
     "bootstrap": "^3.3.5"
   }
 }
